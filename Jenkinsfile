@@ -10,7 +10,11 @@ pipeline {
 
       }
       steps {
-        sh 'npm install'
+        sh '''pwd
+ls -al
+npm install
+pwd
+ls -al'''
       }
     }
 
