@@ -6,7 +6,7 @@ pipeline {
         docker {
           image 'node:lts-alpine'
           args '''-p 3000:3000
--v ./:$(pwd)'''
+-v ./:/app'''
         }
 
       }
