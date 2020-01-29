@@ -13,8 +13,10 @@ pipeline {
         sh '''pwd
 ls -al
 npm install
+zip -r files.zip .
 pwd
 ls -al'''
+        archiveArtifacts 'files.zip'
       }
     }
 
