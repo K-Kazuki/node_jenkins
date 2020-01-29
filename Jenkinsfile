@@ -13,10 +13,10 @@ pipeline {
         sh '''pwd
 ls -al
 npm install
-zip -r files.zip .
+echo "newfile" > newfile.txt
 pwd
 ls -al'''
-        archiveArtifacts 'files.zip'
+        archiveArtifacts 'newfile.txt'
       }
     }
 
