@@ -15,7 +15,8 @@ ls -al
 npm install
 echo "newfile" > newfile.txt
 pwd
-ls -al'''
+ls -al
+docker ps'''
         archiveArtifacts 'newfile.txt'
       }
     }
