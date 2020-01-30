@@ -21,7 +21,8 @@ ls -al'''
     stage('deploy') {
       steps {
         sh '''pwd
-ls -al'''
+ls -al
+docker ps'''
       }
     }
 
