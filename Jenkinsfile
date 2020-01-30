@@ -19,6 +19,7 @@ ls -al'''
     }
 
     stage('deploy') {
+      agent any
       steps {
         sh '''pwd
 ls -al
